@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>jeep_imjl11_u4a1</display-name>
+  <welcome-file-list>
+    <welcome-file>customer-help.jsp</welcome-file>  
+  </welcome-file-list>
+   
+  <filter>
+  	<filter-name>stats</filter-name>
+  	<filter-class>filters.StatsFilter</filter-class>
+  	<init-param>
+		<param-name>os</param-name>
+		<param-value>Linux,Windows,Mac OS</param-value>
+	</init-param>
+  	<init-param>
+		<param-name>browser</param-name>
+		<param-value>Mozilla,Safari,Firefox,Chrome,Opera,Internet Explorer</param-value>
+  	</init-param>
+	
+  </filter>
+  
+  <filter>
+  	<filter-name>access</filter-name>
+  	<filter-class>filters.NoAccess</filter-class>
+  	<init-param>
+  		<param-name>allowedBrowsers</param-name>
+  		<param-value>Mozilla,Opera</param-value>
+  	</init-param>
+  </filter>
+
+  <filter-mapping>
+  	<filter-name>access</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>stats</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+</web-app>

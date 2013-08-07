@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="jeep_imjl11_u6a2Webanwendung">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="commons-beanutils-1.8.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/commons-beanutils-1.8.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-core-1.8.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/commons-beanutils-core-1.8.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jsp.jstl-1.2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/javax.servlet.jsp.jstl-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="itextpdf-5.3.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/itextpdf-5.3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-client.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/jboss-client.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="clist-pdf.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/clist-pdf.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jsp.jstl-api-1.2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/SharedLibs/libs/javax.servlet.jsp.jstl-api-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="jeep_imjl11_u6a2Webanwendung"/>
+        <property name="java-output-path" value="/jeep_imjl11_u6a2Webanwendung/build/classes"/>
+    </wb-module>
+</project-modules>

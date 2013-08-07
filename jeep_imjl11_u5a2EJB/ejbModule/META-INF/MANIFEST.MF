@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: jeep_imjl11_u5a2EJBClient.jar
+
